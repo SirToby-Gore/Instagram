@@ -1,0 +1,221 @@
+@import 'variable.scss';
+
+@mixin album($album_colour_1, $album_colour_2, $album_colour_3) {
+    /*colours, 1: main, 2: dark, 3: light*/
+
+    /*#region hover*/
+    &:not(:hover) > .main > img {
+        transition: $trns-close-setting;
+        filter: grayscale(100%);
+        width: $img-width-collapsed;
+        height: $img-width-collapsed;
+        margin: 0px;
+
+    }
+    &:hover > .main > img {
+        transition: $trns-open-setting;
+        transition-delay: $image_open_delay;
+        color: $album_colour_1;
+    }
+    
+    &:not(:hover) > .main > p {
+        transition: $trns-close-setting;
+        display: none;
+    }
+    &:hover > p {
+        transition: $trns-open-setting;
+        transition-delay: $open_delay;
+    }
+    
+    &:not(:hover) > .main > h1 {
+        transition: $trns-open-setting;
+        color: grayscale($color: #adadad);
+    }
+    &:hover > .main > h1 {
+        transition: $trns-close-setting;
+        transition-delay: $open_delay;
+        display: none;
+    }
+
+    &:not(:hover) > .main > button {
+        transition: $trns-close-setting;
+        display: none;
+    }
+    &:hover > .main > button {
+        transition: $trns-open-setting;
+        transition-delay: $open_delay;
+    }
+    
+    &:not(:hover) > .main {
+        transition: $trns-close-setting;
+        background: transparent;
+    }
+    &:hover > .main {
+        transition: $trns-open-setting;
+    }
+
+    &:not(:hover) {
+        transition: $trns-close-setting;
+        background: transparent;
+        border: none;
+    }
+    &:hover {
+        transition: $trns-open-setting;
+    }
+    /*#endregion*/
+    
+    background: linear-gradient(
+        to right,
+        $album_colour_2,
+        $album_colour_1,
+        $album_colour_3,
+        $album_colour_1,
+        $album_colour_2
+    );
+
+    width: 90vw;
+    margin: 30px;
+    padding: 5px;
+    animation: animated 6.5s linear infinite;
+    justify-content: left;
+    border-radius: 30px;
+
+    @keyframes animated {
+        to {
+            background-position-x: 90vw;
+        }
+    }
+
+    .main {
+        position: relative;
+        padding: 5px;
+        border-radius: 25px;
+        margin: 5px;
+        display: block;
+        background-color: $body-background;
+        display: flex;
+        flex-wrap: nowrap;
+        
+
+        
+        img {   
+            width: $img-width-full;
+            height: $img-width-full;
+            border-radius: 10px;
+            margin: 10px;
+        }
+        
+        h1 {
+            font-family: $pri-fnt;
+            color: $album_colour_1;
+            font-weight: bold;
+            font-size: xx-large;
+            margin: 0px 12px;
+        }
+        
+        p {
+            font-family: $pri-fnt;
+            color: $pri-txt;
+            font-size: medium;
+            text-align: left;
+            columns: $col-width 2;
+            column-gap: 25px;
+            max-width: 500px;
+            padding: 10px 0px;
+        
+            .title {
+                font-family: $pri-fnt;
+                color: $album_colour_1;
+                font-size: larger;
+                font-weight: bold;
+            }
+        
+            .song{
+                font-family: $pri-fnt;
+                color: lighten($color: $album_colour_1, $amount: 10);
+                font-size: medium;
+                border: none;
+            }
+        }
+
+        button {
+            &:hover {
+                background-color: transparent;
+            }
+
+            background-color: $album_colour_1;
+            font-family: $pri-fnt;
+            font-size: large;
+            font-weight: bold;
+            color: $pri-txt;
+            padding: 10px;
+            border-width: 3px;
+            border-color: $album_colour_1;
+            border-radius: 10px;
+            position: absolute;
+            margin: 10px;
+            right: 0;
+            bottom: 0;
+        }
+    }
+}
+
+
+body {
+    background-color: $body-background;
+  
+    #cold-spring-habour {
+        $colour: #4a4a4a;
+        @include album($colour, darken($colour, 15%), lighten($colour, 30%));
+    }
+
+    #piano-man {
+        $colour: #5b5b5b;
+        @include album($colour, darken($colour, 15%), lighten($colour, 30%));
+    }
+    
+    #streetlife-serenade {
+        $colour: #500a0d;
+        @include album($colour, #e0a24c, #49679f);
+    }
+
+    #o52nd-street {
+        $colour: #944713;
+        @include album($colour, #956130, #59807e); 
+    }
+
+    #the-stranger {
+        $colour: #4a3d3d;
+        @include album($colour, #211115, #a19da4);
+    }
+
+    #glass-houses {
+        $colour: #00a9e6;
+        @include album($colour, #ff363d, #def9f8);
+    }
+
+    #the-nylon-curtain {
+        $colour: #ffb665;
+        @include album($colour, #a7cde8, #ffbe7f);
+    }
+
+    #an-innosent-man {
+        $colour: #d6a33c;
+        @include album($colour, #2b2f2d, darken($colour, 15%));
+    }
+
+    #the-bridge {
+      $colour: #00578e;
+      @include album($colour, #244970, #a7b5c6);
+    }
+
+    #storm-front {
+        $colour: #c80000;
+      @include album($colour, #22101e, #070409);
+    }
+
+    #river-of-dreams {
+        $colour: #5ea5ba;
+      @include album($colour, #006e4c, #822a30);
+    }
+}

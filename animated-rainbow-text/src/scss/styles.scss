@@ -1,0 +1,52 @@
+body {
+    background-color: #121212;
+}
+
+.AR-text {
+    --width: 0;
+    --height: 0;
+
+    $linear-gradient: linear-gradient(
+        to left,
+        violet,
+        indigo,
+        blue,
+        green,
+        yellow,
+        orange,
+        red,
+        violet
+    );
+
+    background: $linear-gradient; 
+
+    background-clip: text;
+    color: transparent;
+    display: inline;
+    animation: animated 5s linear infinite;
+
+    font-size: xx-large;
+
+    // &::before {
+    //     content: "";
+    //     filter: blur(10px);
+
+    //     z-index: -1;
+
+    //     border: 2px solid white;
+
+    //     position: absolute;
+        
+    //     background: $linear-gradient;
+    //     animation: animated 5s linear infinite;
+
+    //     height: var(--height);
+    //     width: var(--width);
+    // }
+
+    @keyframes animated {
+        to {
+            background-position-x: var(--width);
+        }
+    }   
+}

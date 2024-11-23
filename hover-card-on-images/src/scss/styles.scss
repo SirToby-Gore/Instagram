@@ -1,0 +1,53 @@
+body {
+    background-color: #121212;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.card-img-hover {
+    $time: 1.5s;
+
+    & {
+        position: relative;
+        overflow: hidden;
+    }
+  
+    img {
+        width: 100%;
+        height: auto;
+
+        transition: filter $time ease;
+    }
+  
+    .card {
+        opacity: 0;
+        
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        
+        color: white;
+        font-weight: bold;
+
+        size: 300px;
+
+        transition: opacity $time ease;
+    }
+  
+    &:hover {
+        & {
+            border: 0.1rem solid white;
+        }
+
+        img {
+            filter: blur(3px) 
+        }
+
+        .card{
+            opacity: 1;
+        }
+    }
+}

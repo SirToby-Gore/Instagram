@@ -1,0 +1,37 @@
+@import 'base.scss';
+
+$colour: #221b17;
+
+body {
+    background-color: $colour;
+    
+    img {
+        margin: 0px;   
+        width: 35vw;
+        height: 35vw;
+        position: fixed;
+        top: 0;
+        right: 0;
+
+        
+        transition: all ease-in-out 0.0000000000001s;
+        transform-origin: center;
+        
+        &:hover {
+            animation: spin 60s linear infinite;
+        }
+
+        @keyframes spin {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    }
+
+    .song {
+        @include song(#7a5c47);
+    }
+}

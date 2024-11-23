@@ -1,0 +1,20 @@
+body {
+  background-color: #121212;
+}
+
+.AR-text {
+  --width: 0;
+  --height: 0;
+  background: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red, violet);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  display: inline;
+  animation: animated 5s linear infinite;
+  font-size: xx-large;
+}
+@keyframes animated {
+  to {
+    background-position-x: var(--width);
+  }
+}/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,37 @@
+body {
+  background-color: #121212;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.card-img-hover {
+  position: relative;
+  overflow: hidden;
+}
+.card-img-hover img {
+  width: 100%;
+  height: auto;
+  transition: filter 1.5s ease;
+}
+.card-img-hover .card {
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-weight: bold;
+  size: 300px;
+  transition: opacity 1.5s ease;
+}
+.card-img-hover:hover {
+  border: 0.1rem solid white;
+}
+.card-img-hover:hover img {
+  filter: blur(3px);
+}
+.card-img-hover:hover .card {
+  opacity: 1;
+}/*# sourceMappingURL=styles.css.map */

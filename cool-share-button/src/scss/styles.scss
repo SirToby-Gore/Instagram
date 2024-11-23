@@ -1,0 +1,238 @@
+.share-wheel {
+    $button-size: 3rem;
+    $inset: 20px;
+    $border-radius: 100%;
+    $border-colour: darkblue;
+
+    & {
+        position: relative;
+
+        width: calc($button-size*2 + $inset/2);
+        aspect-ratio: 1;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        border: $border-colour 0.4rem solid;
+        border-radius: $border-radius*2;
+    }
+
+    &:has(.open-share-wheel:checked) {
+        & {
+            width: $button-size;
+            height: $button-size;
+
+            border: $border-colour 0.2rem solid;
+        }
+
+        button {
+            display: none;
+        }
+
+        .open-share-wheel {
+            border-radius: 50%;
+        }
+    }
+
+    .open-share-wheel {
+        $background-colour: #232323;
+
+        position: relative;
+
+        height: $button-size;
+        aspect-ratio: 1;
+
+        appearance: none;
+
+        z-index: 1;
+
+        clip-path: polygon(
+            50% 0,
+            100% 50%,
+            50% 100%,
+            0 50%
+        );
+
+        &:checked {
+            clip-path: none;
+        }
+        
+        &:not(:checked) + .share-img + .close-img {
+            display: block;
+        }
+
+        &:checked + .share-img {
+            display: block;
+        }
+    }
+
+    img {
+        display: none;
+        position: absolute;
+
+        width: $button-size;
+        height: $button-size;
+
+        top: 50%;   
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        clip-path: polygon(
+            0 50%,
+            50% 0,
+            100% 50%,
+            50% 100%
+        );
+
+        mix-blend-mode: darken;
+    }
+
+    button {
+        position: absolute;
+        
+        height: $button-size;
+        aspect-ratio: 1;
+
+        border: solid $border-colour 0.1rem;
+
+
+        &:not(:hover) + p {
+            display: none;
+        }
+    }
+        
+    p {
+        &::before {
+            content: "Share to: ";
+        }
+
+        display: block;
+
+        text-transform: capitalize;
+
+        position: absolute;
+        top: 50%;
+        left: 100%;
+
+        min-width: $button-size;
+
+        border: #7a7a7a 2px solid;
+        background-color: #232323;
+
+        padding: $inset/2;
+
+        z-index: 1;
+    }
+
+    // NW button
+    .share-button:nth-of-type(1){ 
+        top: 0;
+        left: 0;
+
+        border-top-left-radius: $border-radius;
+
+        clip-path:  polygon(
+            0 0,
+            100% 0,
+            100% calc(100% - 20px),
+            calc(100% - 20px) 100%,
+            0 100%,
+        );
+    }
+ 
+    // NE button
+    .share-button:nth-of-type(2) {
+        top: 0;
+        right: 0;
+
+        border-top-right-radius: $border-radius;
+
+        clip-path:  polygon(
+            0 0,
+            0 calc(100% - $inset),
+            $inset 100%,
+            100% 100%,
+            100% 0,
+        );
+    }
+    
+    // SW button
+    .share-button:nth-of-type(3) {
+        bottom: 0;
+        left: 0;
+
+        border-bottom-left-radius: $border-radius;
+
+        clip-path: polygon(
+            0px 0px,
+            0px 100%,
+            100% 100%,
+            100% $inset,
+            calc(100% - $inset) 0,
+        );
+    }
+    
+    // SE button
+    .share-button:nth-of-type(4) {
+        bottom: 0;
+        right: 0;
+
+        border-bottom-right-radius: $border-radius;
+
+        clip-path:  polygon(
+            0 $inset,
+            $inset 0,
+            100% 0,
+            100% 100%,
+            0 100%,
+        );
+    }
+
+    #whats-app-button {
+        background-color: green;
+
+        &:hover {
+            background-color: darkgreen;
+        }
+    }
+    
+    #facebook-button {
+        background-color: blue;
+
+        &:hover {
+            background-color: darkblue;
+        }
+    }
+    
+    #instagram-button {
+        background: radial-gradient(
+            circle at 30% 107%,
+            #fdf497 0%,
+            #fdf497 5%,
+            #fd5949 45%,
+            #d6249f 60%,
+            #285AEB 90%
+        );
+
+        &:hover {
+            background: radial-gradient(
+                circle at 30% 107%,
+                darken(#fdf497, 15%) 0%,
+                darken(#fdf497, 15%) 5%,
+                darken(#fd5949, 15%) 45%,
+                darken(#d6249f, 15%) 60%,
+                darken(#285AEB, 15%) 90%
+            );
+        }
+    }
+
+    #twitter-button {
+        background-color: #00a7e8;
+
+        &:hover {
+            background-color: #0082b6;
+        }
+    }
+}

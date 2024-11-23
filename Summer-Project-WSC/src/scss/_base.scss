@@ -1,0 +1,74 @@
+@import 'variable.scss';
+
+@mixin song($album_colour) {
+
+    &:not(:hover) {
+        border-width: 1px;
+    }
+    &:not(hover)  > p {
+        display: none;
+    }
+    &:hover > p {
+        display: block;
+    }
+
+    max-width: max(60vw, 60vh);
+    border: white 5px solid;
+    margin: 10px;
+    position: relative;
+    border-radius: 12px;
+
+    h1 {
+        margin: 10px 40px;
+        font-size: xx-large;
+        font-family: $pri-fnt;
+        color: $album_colour;
+        font-weight: bold;  
+        columns: 250 1;
+        column-gap: 12px;
+        max-width: min(55vw, 55vh);
+        padding: 10px 0px;
+    }
+
+    p {
+        margin: 12px;
+        font-size: large;
+        font-family: $pri-fnt;
+        color: $pri_txt;
+        columns: 150 3;
+        column-gap: 12px;
+        max-width: 55vw;
+        padding: 10px 0px;
+    }
+
+    button {
+        &:hover {
+            background-color: #aa0000;
+        }
+
+        &:active {
+            background-color: #ff004C;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 14px;
+            left: 10px;
+            rotate: 90deg;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 0 10px 10px 10px;
+            border-color: transparent transparent white transparent;
+        }
+
+        border-radius: 50%;
+        background-color : $album_colour;
+        position: absolute;
+        height: 40px;
+        width: 40px;
+        top: 10px;
+        right: 10px;
+    }
+}

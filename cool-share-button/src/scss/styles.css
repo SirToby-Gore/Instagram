@@ -1,0 +1,131 @@
+.share-wheel {
+  position: relative;
+  width: calc(6rem + 10px);
+  aspect-ratio: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: darkblue 0.4rem solid;
+  border-radius: 200%;
+}
+.share-wheel:has(.open-share-wheel:checked) {
+  width: 3rem;
+  height: 3rem;
+  border: darkblue 0.2rem solid;
+}
+.share-wheel:has(.open-share-wheel:checked) button {
+  display: none;
+}
+.share-wheel:has(.open-share-wheel:checked) .open-share-wheel {
+  border-radius: 50%;
+}
+.share-wheel .open-share-wheel {
+  position: relative;
+  height: 3rem;
+  aspect-ratio: 1;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  z-index: 1;
+  -webkit-clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+          clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+}
+.share-wheel .open-share-wheel:checked {
+  -webkit-clip-path: none;
+          clip-path: none;
+}
+.share-wheel .open-share-wheel:not(:checked) + .share-img + .close-img {
+  display: block;
+}
+.share-wheel .open-share-wheel:checked + .share-img {
+  display: block;
+}
+.share-wheel img {
+  display: none;
+  position: absolute;
+  width: 3rem;
+  height: 3rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-clip-path: polygon(0 50%, 50% 0, 100% 50%, 50% 100%);
+          clip-path: polygon(0 50%, 50% 0, 100% 50%, 50% 100%);
+  mix-blend-mode: darken;
+}
+.share-wheel button {
+  position: absolute;
+  height: 3rem;
+  aspect-ratio: 1;
+  border: solid darkblue 0.1rem;
+}
+.share-wheel button:not(:hover) + p {
+  display: none;
+}
+.share-wheel p {
+  display: block;
+  text-transform: capitalize;
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  min-width: 3rem;
+  border: #7a7a7a 2px solid;
+  background-color: #232323;
+  padding: 10px;
+  z-index: 1;
+}
+.share-wheel p::before {
+  content: "Share to: ";
+}
+.share-wheel .share-button:nth-of-type(1) {
+  top: 0;
+  left: 0;
+  border-top-left-radius: 100%;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%);
+}
+.share-wheel .share-button:nth-of-type(2) {
+  top: 0;
+  right: 0;
+  border-top-right-radius: 100%;
+  -webkit-clip-path: polygon(0 0, 0 calc(100% - 20px), 20px 100%, 100% 100%, 100% 0);
+          clip-path: polygon(0 0, 0 calc(100% - 20px), 20px 100%, 100% 100%, 100% 0);
+}
+.share-wheel .share-button:nth-of-type(3) {
+  bottom: 0;
+  left: 0;
+  border-bottom-left-radius: 100%;
+  -webkit-clip-path: polygon(0px 0px, 0px 100%, 100% 100%, 100% 20px, calc(100% - 20px) 0);
+          clip-path: polygon(0px 0px, 0px 100%, 100% 100%, 100% 20px, calc(100% - 20px) 0);
+}
+.share-wheel .share-button:nth-of-type(4) {
+  bottom: 0;
+  right: 0;
+  border-bottom-right-radius: 100%;
+  -webkit-clip-path: polygon(0 20px, 20px 0, 100% 0, 100% 100%, 0 100%);
+          clip-path: polygon(0 20px, 20px 0, 100% 0, 100% 100%, 0 100%);
+}
+.share-wheel #whats-app-button {
+  background-color: green;
+}
+.share-wheel #whats-app-button:hover {
+  background-color: darkgreen;
+}
+.share-wheel #facebook-button {
+  background-color: blue;
+}
+.share-wheel #facebook-button:hover {
+  background-color: darkblue;
+}
+.share-wheel #instagram-button {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+.share-wheel #instagram-button:hover {
+  background: radial-gradient(circle at 30% 107%, #fcec4c 0%, #fcec4c 5%, #f71803 45%, #95196e 60%, #113bb6 90%);
+}
+.share-wheel #twitter-button {
+  background-color: #00a7e8;
+}
+.share-wheel #twitter-button:hover {
+  background-color: #0082b6;
+}/*# sourceMappingURL=styles.css.map */

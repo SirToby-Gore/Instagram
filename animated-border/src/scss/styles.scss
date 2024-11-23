@@ -1,0 +1,75 @@
+@property --var-angle {
+    syntax: '<angle>';
+    initial-value: 0deg;
+    inherits: false;
+}
+
+$background-color: #121212;
+
+body {
+    background-color: $background-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.card {
+    $padding: 15px;
+    $border-radius: 30px;
+    $margin: 30px;
+    $border-width: -.5rem;
+
+    margin: $margin;
+    border-radius: $border-radius;
+    padding: $padding;
+
+    justify-content: center;
+    position: relative;
+
+    background-color: $background-color;
+
+    &::after,
+    &::before{
+        background: conic-gradient(
+            from var(--var-angle), /* repeat for a smooth joining */ 
+            red,
+            yellow,
+            green,
+            blue,
+            purple,
+            red
+        ); /* reuse the first colour to keep smooth transition */
+    
+        content: "";
+
+        z-index: -1;
+        
+        border-radius: calc($border-radius - $border-width);
+        inset: $border-width;
+
+        animation: animated-rotation 10s linear infinite;
+
+        position: absolute;
+    }
+
+    &::after{
+        filter: blur(3.5rem);
+    }
+    
+    @keyframes animated-rotation {
+        0% {--var-angle: 0deg;}
+        100% {--var-angle: 360deg;}
+    }
+}
+
+
+h1 {
+    color: white;
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 900;
+    letter-spacing: 0.2rem;
+    margin: 5rem;
+}

@@ -1,0 +1,1477 @@
+body {
+  background-color: #00001a;
+}
+body #cold-spring-habour {
+  /*colours, 1: main, 2: dark, 3: light*/
+  /*#region hover*/
+  /*#endregion*/
+  background: linear-gradient(to right, #242424, #4a4a4a, #979797, #4a4a4a, #242424);
+  width: 90vw;
+  margin: 30px;
+  padding: 5px;
+  animation: animated 6.5s linear infinite;
+  justify-content: left;
+  border-radius: 30px;
+}
+body #cold-spring-habour:not(:hover) > .main > img {
+  transition: all ease-in-out 0.5s;
+  filter: grayscale(100%);
+  width: 150px;
+  height: 150px;
+  margin: 0px;
+}
+body #cold-spring-habour:hover > .main > img {
+  transition: all ease-in-out 0.8s;
+  transition-delay: 0.3s;
+  color: #4a4a4a;
+}
+body #cold-spring-habour:not(:hover) > .main > p {
+  transition: all ease-in-out 0.5s;
+  display: none;
+}
+body #cold-spring-habour:hover > p {
+  transition: all ease-in-out 0.8s;
+  transition-delay: 0.5s;
+}
+body #cold-spring-habour:not(:hover) > .main > h1 {
+  transition: all ease-in-out 0.8s;
+  color: #adadad;
+}
+body #cold-spring-habour:hover > .main > h1 {
+  transition: all ease-in-out 0.5s;
+  transition-delay: 0.5s;
+  display: none;
+}
+body #cold-spring-habour:not(:hover) > .main > button {
+  transition: all ease-in-out 0.5s;
+  display: none;
+}
+body #cold-spring-habour:hover > .main > button {
+  transition: all ease-in-out 0.8s;
+  transition-delay: 0.5s;
+}
+body #cold-spring-habour:not(:hover) > .main {
+  transition: all ease-in-out 0.5s;
+  background: transparent;
+}
+body #cold-spring-habour:hover > .main {
+  transition: all ease-in-out 0.8s;
+}
+body #cold-spring-habour:not(:hover) {
+  transition: all ease-in-out 0.5s;
+  background: transparent;
+  border: none;
+}
+body #cold-spring-habour:hover {
+  transition: all ease-in-out 0.8s;
+}
+@keyframes animated {
+  to {
+    background-position-x: 90vw;
+  }
+}
+body #cold-spring-habour .main {
+  position: relative;
+  padding: 5px;
+  border-radius: 25px;
+  margin: 5px;
+  display: block;
+  background-color: #00001a;
+  display: flex;
+  flex-wrap: nowrap;
+}
+body #cold-spring-habour .main img {
+  width: 350px;
+  height: 350px;
+  border-radius: 10px;
+  margin: 10px;
+}
+body #cold-spring-habour .main h1 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #4a4a4a;
+  font-weight: bold;
+  font-size: xx-large;
+  margin: 0px 12px;
+}
+body #cold-spring-habour .main p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #ffffff;
+  font-size: medium;
+  text-align: left;
+  -moz-columns: 150px 2;
+       columns: 150px 2;
+  -moz-column-gap: 25px;
+       column-gap: 25px;
+  max-width: 500px;
+  padding: 10px 0px;
+}
+body #cold-spring-habour .main p .title {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #4a4a4a;
+  font-size: larger;
+  font-weight: bold;
+}
+body #cold-spring-habour .main p .song {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #646464;
+  font-size: medium;
+  border: none;
+}
+body #cold-spring-habour .main button {
+  background-color: #4a4a4a;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: large;
+  font-weight: bold;
+  color: #ffffff;
+  padding: 10px;
+  border-width: 3px;
+  border-color: #4a4a4a;
+  border-radius: 10px;
+  position: absolute;
+  margin: 10px;
+  right: 0;
+  bottom: 0;
+}
+body #cold-spring-habour .main button:hover {
+  background-color: transparent;
+}
+body #piano-man {
+  /*colours, 1: main, 2: dark, 3: light*/
+  /*#region hover*/
+  /*#endregion*/
+  background: linear-gradient(to right, #353535, #5b5b5b, #a8a8a8, #5b5b5b, #353535);
+  width: 90vw;
+  margin: 30px;
+  padding: 5px;
+  animation: animated 6.5s linear infinite;
+  justify-content: left;
+  border-radius: 30px;
+}
+body #piano-man:not(:hover) > .main > img {
+  transition: all ease-in-out 0.5s;
+  filter: grayscale(100%);
+  width: 150px;
+  height: 150px;
+  margin: 0px;
+}
+body #piano-man:hover > .main > img {
+  transition: all ease-in-out 0.8s;
+  transition-delay: 0.3s;
+  color: #5b5b5b;
+}
+body #piano-man:not(:hover) > .main > p {
+  transition: all ease-in-out 0.5s;
+  display: none;
+}
+body #piano-man:hover > p {
+  transition: all ease-in-out 0.8s;
+  transition-delay: 0.5s;
+}
+body #piano-man:not(:hover) > .main > h1 {
+  transition: all ease-in-out 0.8s;
+  color: #adadad;
+}
+body #piano-man:hover > .main > h1 {
+  transition: all ease-in-out 0.5s;
+  transition-delay: 0.5s;
+  display: none;
+}
+body #piano-man:not(:hover) > .main > button {
+  transition: all ease-in-out 0.5s;
+  display: none;
+}
+body #piano-man:hover > .main > button {
+  transition: all ease-in-out 0.8s;
+  transition-delay: 0.5s;
+}
+body #piano-man:not(:hover) > .main {
+  transition: all ease-in-out 0.5s;
+  background: transparent;
+}
+body #piano-man:hover > .main {
+  transition: all ease-in-out 0.8s;
+}
+body #piano-man:not(:hover) {
+  transition: all ease-in-out 0.5s;
+  background: transparent;
+  border: none;
+}
+body #piano-man:hover {
+  transition: all ease-in-out 0.8s;
+}
+@keyframes animated {
+  to {
+    background-position-x: 90vw;
+  }
+}
+body #piano-man .main {
+  position: relative;
+  padding: 5px;
+  border-radius: 25px;
+  margin: 5px;
+  display: block;
+  background-color: #00001a;
+  display: flex;
+  flex-wrap: nowrap;
+}
+body #piano-man .main img {
+  width: 350px;
+  height: 350px;
+  border-radius: 10px;
+  margin: 10px;
+}
+body #piano-man .main h1 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #5b5b5b;
+  font-weight: bold;
+  font-size: xx-large;
+  margin: 0px 12px;
+}
+body #piano-man .main p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #ffffff;
+  font-size: medium;
+  text-align: left;
+  -moz-columns: 150px 2;
+       columns: 150px 2;
+  -moz-column-gap: 25px;
+       column-gap: 25px;
+  max-width: 500px;
+  padding: 10px 0px;
+}
+body #piano-man .main p .title {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #5b5b5b;
+  font-size: larger;
+  font-weight: bold;
+}
+body #piano-man .main p .song {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #757575;
+  font-size: medium;
+  border: none;
+}
+body #piano-man .main button {
+  background-color: #5b5b5b;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: large;
+  font-weight: bold;
+  color: #ffffff;
+  padding: 10px;
+  border-width: 3px;
+  border-color: #5b5b5b;
+  border-radius: 10px;
+  position: absolute;
+  margin: 10px;
+  right: 0;
+  bottom: 0;
+}
+body #piano-man .main button:hover {
+  background-color: transparent;
+}
+body #streetlife-serenade {
+  /*colours, 1: main, 2: dark, 3: light*/
+  /*#region hover*/
+  /*#endregion*/
+  background: linear-gradient(to right, #e0a24c, #500a0d, #49679f, #500a0d, #e0a24c);
+  width: 90vw;
+  margin: 30px;
+  padding: 5px;
+  animation: animated 6.5s linear infinite;
+  justify-content: left;
+  border-radius: 30px;
+}
+body #streetlife-serenade:not(:hover) > .main > img {
+  transition: all ease-in-out 0.5s;
+  filter: grayscale(100%);
+  width: 150px;
+  height: 150px;
+  margin: 0px;
+}
+body #streetlife-serenade:hover > .main > img {
+  transition: all ease-in-out 0.8s;
+  transition-delay: 0.3s;
+  color: #500a0d;
+}
+body #streetlife-serenade:not(:hover) > .main > p {
+  transition: all ease-in-out 0.5s;
+  display: none;
+}
+body #streetlife-serenade:hover > p {
+  transition: all ease-in-out 0.8s;
+  transition-delay: 0.5s;
+}
+body #streetlife-serenade:not(:hover) > .main > h1 {
+  transition: all ease-in-out 0.8s;
+  color: #adadad;
+}
+body #streetlife-serenade:hover > .main > h1 {
+  transition: all ease-in-out 0.5s;
+  transition-delay: 0.5s;
+  display: none;
+}
+body #streetlife-serenade:not(:hover) > .main > button {
+  transition: all ease-in-out 0.5s;
+  display: none;
+}
+body #streetlife-serenade:hover > .main > button {
+  transition: all ease-in-out 0.8s;
+  transition-delay: 0.5s;
+}
+body #streetlife-serenade:not(:hover) > .main {
+  transition: all ease-in-out 0.5s;
+  background: transparent;
+}
+body #streetlife-serenade:hover > .main {
+  transition: all ease-in-out 0.8s;
+}
+body #streetlife-serenade:not(:hover) {
+  transition: all ease-in-out 0.5s;
+  background: transparent;
+  border: none;
+}
+body #streetlife-serenade:hover {
+  transition: all ease-in-out 0.8s;
+}
+@keyframes animated {
+  to {
+    background-position-x: 90vw;
+  }
+}
+body #streetlife-serenade .main {
+  position: relative;
+  padding: 5px;
+  border-radius: 25px;
+  margin: 5px;
+  display: block;
+  background-color: #00001a;
+  display: flex;
+  flex-wrap: nowrap;
+}
+body #streetlife-serenade .main img {
+  width: 350px;
+  height: 350px;
+  border-radius: 10px;
+  margin: 10px;
+}
+body #streetlife-serenade .main h1 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #500a0d;
+  font-weight: bold;
+  font-size: xx-large;
+  margin: 0px 12px;
+}
+body #streetlife-serenade .main p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #ffffff;
+  font-size: medium;
+  text-align: left;
+  -moz-columns: 150px 2;
+       columns: 150px 2;
+  -moz-column-gap: 25px;
+       column-gap: 25px;
+  max-width: 500px;
+  padding: 10px 0px;
+}
+body #streetlife-serenade .main p .title {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #500a0d;
+  font-size: larger;
+  font-weight: bold;
+}
+body #streetlife-serenade .main p .song {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #7d1014;
+  font-size: medium;
+  border: none;
+}
+body #streetlife-serenade .main button {
+  background-color: #500a0d;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: large;
+  font-weight: bold;
+  color: #ffffff;
+  padding: 10px;
+  border-width: 3px;
+  border-color: #500a0d;
+  border-radius: 10px;
+  position: absolute;
+  margin: 10px;
+  right: 0;
+  bottom: 0;
+}
+body #streetlife-serenade .main button:hover {
+  background-color: transparent;
+}
+body #o52nd-street {
+  /*colours, 1: main, 2: dark, 3: light*/
+  /*#region hover*/
+  /*#endregion*/
+  background: linear-gradient(to right, #956130, #944713, #59807e, #944713, #956130);
+  width: 90vw;
+  margin: 30px;
+  padding: 5px;
+  animation: animated 6.5s linear infinite;
+  justify-content: left;
+  border-radius: 30px;
+}
+body #o52nd-street:not(:hover) > .main > img {
+  transition: all ease-in-out 0.5s;
+  filter: grayscale(100%);
+  width: 150px;
+  height: 150px;
+  margin: 0px;
+}
+body #o52nd-street:hover > .main > img {
+  transition: all ease-in-out 0.8s;
+  transition-delay: 0.3s;
+  color: #944713;
+}
+body #o52nd-street:not(:hover) > .main > p {
+  transition: all ease-in-out 0.5s;
+  display: none;
+}
+body #o52nd-street:hover > p {
+  transition: all ease-in-out 0.8s;
+  transition-delay: 0.5s;
+}
+body #o52nd-street:not(:hover) > .main > h1 {
+  transition: all ease-in-out 0.8s;
+  color: #adadad;
+}
+body #o52nd-street:hover > .main > h1 {
+  transition: all ease-in-out 0.5s;
+  transition-delay: 0.5s;
+  display: none;
+}
+body #o52nd-street:not(:hover) > .main > button {
+  transition: all ease-in-out 0.5s;
+  display: none;
+}
+body #o52nd-street:hover > .main > button {
+  transition: all ease-in-out 0.8s;
+  transition-delay: 0.5s;
+}
+body #o52nd-street:not(:hover) > .main {
+  transition: all ease-in-out 0.5s;
+  background: transparent;
+}
+body #o52nd-street:hover > .main {
+  transition: all ease-in-out 0.8s;
+}
+body #o52nd-street:not(:hover) {
+  transition: all ease-in-out 0.5s;
+  background: transparent;
+  border: none;
+}
+body #o52nd-street:hover {
+  transition: all ease-in-out 0.8s;
+}
+@keyframes animated {
+  to {
+    background-position-x: 90vw;
+  }
+}
+body #o52nd-street .main {
+  position: relative;
+  padding: 5px;
+  border-radius: 25px;
+  margin: 5px;
+  display: block;
+  background-color: #00001a;
+  display: flex;
+  flex-wrap: nowrap;
+}
+body #o52nd-street .main img {
+  width: 350px;
+  height: 350px;
+  border-radius: 10px;
+  margin: 10px;
+}
+body #o52nd-street .main h1 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #944713;
+  font-weight: bold;
+  font-size: xx-large;
+  margin: 0px 12px;
+}
+body #o52nd-street .main p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #ffffff;
+  font-size: medium;
+  text-align: left;
+  -moz-columns: 150px 2;
+       columns: 150px 2;
+  -moz-column-gap: 25px;
+       column-gap: 25px;
+  max-width: 500px;
+  padding: 10px 0px;
+}
+body #o52nd-street .main p .title {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #944713;
+  font-size: larger;
+  font-weight: bold;
+}
+body #o52nd-street .main p .song {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #c15d19;
+  font-size: medium;
+  border: none;
+}
+body #o52nd-street .main button {
+  background-color: #944713;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: large;
+  font-weight: bold;
+  color: #ffffff;
+  padding: 10px;
+  border-width: 3px;
+  border-color: #944713;
+  border-radius: 10px;
+  position: absolute;
+  margin: 10px;
+  right: 0;
+  bottom: 0;
+}
+body #o52nd-street .main button:hover {
+  background-color: transparent;
+}
+body #the-stranger {
+  /*colours, 1: main, 2: dark, 3: light*/
+  /*#region hover*/
+  /*#endregion*/
+  background: linear-gradient(to right, #211115, #4a3d3d, #a19da4, #4a3d3d, #211115);
+  width: 90vw;
+  margin: 30px;
+  padding: 5px;
+  animation: animated 6.5s linear infinite;
+  justify-content: left;
+  border-radius: 30px;
+}
+body #the-stranger:not(:hover) > .main > img {
+  transition: all ease-in-out 0.5s;
+  filter: grayscale(100%);
+  width: 150px;
+  height: 150px;
+  margin: 0px;
+}
+body #the-stranger:hover > .main > img {
+  transition: all ease-in-out 0.8s;
+  transition-delay: 0.3s;
+  color: #4a3d3d;
+}
+body #the-stranger:not(:hover) > .main > p {
+  transition: all ease-in-out 0.5s;
+  display: none;
+}
+body #the-stranger:hover > p {
+  transition: all ease-in-out 0.8s;
+  transition-delay: 0.5s;
+}
+body #the-stranger:not(:hover) > .main > h1 {
+  transition: all ease-in-out 0.8s;
+  color: #adadad;
+}
+body #the-stranger:hover > .main > h1 {
+  transition: all ease-in-out 0.5s;
+  transition-delay: 0.5s;
+  display: none;
+}
+body #the-stranger:not(:hover) > .main > button {
+  transition: all ease-in-out 0.5s;
+  display: none;
+}
+body #the-stranger:hover > .main > button {
+  transition: all ease-in-out 0.8s;
+  transition-delay: 0.5s;
+}
+body #the-stranger:not(:hover) > .main {
+  transition: all ease-in-out 0.5s;
+  background: transparent;
+}
+body #the-stranger:hover > .main {
+  transition: all ease-in-out 0.8s;
+}
+body #the-stranger:not(:hover) {
+  transition: all ease-in-out 0.5s;
+  background: transparent;
+  border: none;
+}
+body #the-stranger:hover {
+  transition: all ease-in-out 0.8s;
+}
+@keyframes animated {
+  to {
+    background-position-x: 90vw;
+  }
+}
+body #the-stranger .main {
+  position: relative;
+  padding: 5px;
+  border-radius: 25px;
+  margin: 5px;
+  display: block;
+  background-color: #00001a;
+  display: flex;
+  flex-wrap: nowrap;
+}
+body #the-stranger .main img {
+  width: 350px;
+  height: 350px;
+  border-radius: 10px;
+  margin: 10px;
+}
+body #the-stranger .main h1 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #4a3d3d;
+  font-weight: bold;
+  font-size: xx-large;
+  margin: 0px 12px;
+}
+body #the-stranger .main p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #ffffff;
+  font-size: medium;
+  text-align: left;
+  -moz-columns: 150px 2;
+       columns: 150px 2;
+  -moz-column-gap: 25px;
+       column-gap: 25px;
+  max-width: 500px;
+  padding: 10px 0px;
+}
+body #the-stranger .main p .title {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #4a3d3d;
+  font-size: larger;
+  font-weight: bold;
+}
+body #the-stranger .main p .song {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #665454;
+  font-size: medium;
+  border: none;
+}
+body #the-stranger .main button {
+  background-color: #4a3d3d;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: large;
+  font-weight: bold;
+  color: #ffffff;
+  padding: 10px;
+  border-width: 3px;
+  border-color: #4a3d3d;
+  border-radius: 10px;
+  position: absolute;
+  margin: 10px;
+  right: 0;
+  bottom: 0;
+}
+body #the-stranger .main button:hover {
+  background-color: transparent;
+}
+body #glass-houses {
+  /*colours, 1: main, 2: dark, 3: light*/
+  /*#region hover*/
+  /*#endregion*/
+  background: linear-gradient(to right, #ff363d, #00a9e6, #def9f8, #00a9e6, #ff363d);
+  width: 90vw;
+  margin: 30px;
+  padding: 5px;
+  animation: animated 6.5s linear infinite;
+  justify-content: left;
+  border-radius: 30px;
+}
+body #glass-houses:not(:hover) > .main > img {
+  transition: all ease-in-out 0.5s;
+  filter: grayscale(100%);
+  width: 150px;
+  height: 150px;
+  margin: 0px;
+}
+body #glass-houses:hover > .main > img {
+  transition: all ease-in-out 0.8s;
+  transition-delay: 0.3s;
+  color: #00a9e6;
+}
+body #glass-houses:not(:hover) > .main > p {
+  transition: all ease-in-out 0.5s;
+  display: none;
+}
+body #glass-houses:hover > p {
+  transition: all ease-in-out 0.8s;
+  transition-delay: 0.5s;
+}
+body #glass-houses:not(:hover) > .main > h1 {
+  transition: all ease-in-out 0.8s;
+  color: #adadad;
+}
+body #glass-houses:hover > .main > h1 {
+  transition: all ease-in-out 0.5s;
+  transition-delay: 0.5s;
+  display: none;
+}
+body #glass-houses:not(:hover) > .main > button {
+  transition: all ease-in-out 0.5s;
+  display: none;
+}
+body #glass-houses:hover > .main > button {
+  transition: all ease-in-out 0.8s;
+  transition-delay: 0.5s;
+}
+body #glass-houses:not(:hover) > .main {
+  transition: all ease-in-out 0.5s;
+  background: transparent;
+}
+body #glass-houses:hover > .main {
+  transition: all ease-in-out 0.8s;
+}
+body #glass-houses:not(:hover) {
+  transition: all ease-in-out 0.5s;
+  background: transparent;
+  border: none;
+}
+body #glass-houses:hover {
+  transition: all ease-in-out 0.8s;
+}
+@keyframes animated {
+  to {
+    background-position-x: 90vw;
+  }
+}
+body #glass-houses .main {
+  position: relative;
+  padding: 5px;
+  border-radius: 25px;
+  margin: 5px;
+  display: block;
+  background-color: #00001a;
+  display: flex;
+  flex-wrap: nowrap;
+}
+body #glass-houses .main img {
+  width: 350px;
+  height: 350px;
+  border-radius: 10px;
+  margin: 10px;
+}
+body #glass-houses .main h1 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #00a9e6;
+  font-weight: bold;
+  font-size: xx-large;
+  margin: 0px 12px;
+}
+body #glass-houses .main p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #ffffff;
+  font-size: medium;
+  text-align: left;
+  -moz-columns: 150px 2;
+       columns: 150px 2;
+  -moz-column-gap: 25px;
+       column-gap: 25px;
+  max-width: 500px;
+  padding: 10px 0px;
+}
+body #glass-houses .main p .title {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #00a9e6;
+  font-size: larger;
+  font-weight: bold;
+}
+body #glass-houses .main p .song {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #1ac2ff;
+  font-size: medium;
+  border: none;
+}
+body #glass-houses .main button {
+  background-color: #00a9e6;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: large;
+  font-weight: bold;
+  color: #ffffff;
+  padding: 10px;
+  border-width: 3px;
+  border-color: #00a9e6;
+  border-radius: 10px;
+  position: absolute;
+  margin: 10px;
+  right: 0;
+  bottom: 0;
+}
+body #glass-houses .main button:hover {
+  background-color: transparent;
+}
+body #the-nylon-curtain {
+  /*colours, 1: main, 2: dark, 3: light*/
+  /*#region hover*/
+  /*#endregion*/
+  background: linear-gradient(to right, #a7cde8, #ffb665, #ffbe7f, #ffb665, #a7cde8);
+  width: 90vw;
+  margin: 30px;
+  padding: 5px;
+  animation: animated 6.5s linear infinite;
+  justify-content: left;
+  border-radius: 30px;
+}
+body #the-nylon-curtain:not(:hover) > .main > img {
+  transition: all ease-in-out 0.5s;
+  filter: grayscale(100%);
+  width: 150px;
+  height: 150px;
+  margin: 0px;
+}
+body #the-nylon-curtain:hover > .main > img {
+  transition: all ease-in-out 0.8s;
+  transition-delay: 0.3s;
+  color: #ffb665;
+}
+body #the-nylon-curtain:not(:hover) > .main > p {
+  transition: all ease-in-out 0.5s;
+  display: none;
+}
+body #the-nylon-curtain:hover > p {
+  transition: all ease-in-out 0.8s;
+  transition-delay: 0.5s;
+}
+body #the-nylon-curtain:not(:hover) > .main > h1 {
+  transition: all ease-in-out 0.8s;
+  color: #adadad;
+}
+body #the-nylon-curtain:hover > .main > h1 {
+  transition: all ease-in-out 0.5s;
+  transition-delay: 0.5s;
+  display: none;
+}
+body #the-nylon-curtain:not(:hover) > .main > button {
+  transition: all ease-in-out 0.5s;
+  display: none;
+}
+body #the-nylon-curtain:hover > .main > button {
+  transition: all ease-in-out 0.8s;
+  transition-delay: 0.5s;
+}
+body #the-nylon-curtain:not(:hover) > .main {
+  transition: all ease-in-out 0.5s;
+  background: transparent;
+}
+body #the-nylon-curtain:hover > .main {
+  transition: all ease-in-out 0.8s;
+}
+body #the-nylon-curtain:not(:hover) {
+  transition: all ease-in-out 0.5s;
+  background: transparent;
+  border: none;
+}
+body #the-nylon-curtain:hover {
+  transition: all ease-in-out 0.8s;
+}
+@keyframes animated {
+  to {
+    background-position-x: 90vw;
+  }
+}
+body #the-nylon-curtain .main {
+  position: relative;
+  padding: 5px;
+  border-radius: 25px;
+  margin: 5px;
+  display: block;
+  background-color: #00001a;
+  display: flex;
+  flex-wrap: nowrap;
+}
+body #the-nylon-curtain .main img {
+  width: 350px;
+  height: 350px;
+  border-radius: 10px;
+  margin: 10px;
+}
+body #the-nylon-curtain .main h1 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #ffb665;
+  font-weight: bold;
+  font-size: xx-large;
+  margin: 0px 12px;
+}
+body #the-nylon-curtain .main p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #ffffff;
+  font-size: medium;
+  text-align: left;
+  -moz-columns: 150px 2;
+       columns: 150px 2;
+  -moz-column-gap: 25px;
+       column-gap: 25px;
+  max-width: 500px;
+  padding: 10px 0px;
+}
+body #the-nylon-curtain .main p .title {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #ffb665;
+  font-size: larger;
+  font-weight: bold;
+}
+body #the-nylon-curtain .main p .song {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #ffce98;
+  font-size: medium;
+  border: none;
+}
+body #the-nylon-curtain .main button {
+  background-color: #ffb665;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: large;
+  font-weight: bold;
+  color: #ffffff;
+  padding: 10px;
+  border-width: 3px;
+  border-color: #ffb665;
+  border-radius: 10px;
+  position: absolute;
+  margin: 10px;
+  right: 0;
+  bottom: 0;
+}
+body #the-nylon-curtain .main button:hover {
+  background-color: transparent;
+}
+body #an-innosent-man {
+  /*colours, 1: main, 2: dark, 3: light*/
+  /*#region hover*/
+  /*#endregion*/
+  background: linear-gradient(to right, #2b2f2d, #d6a33c, #a37922, #d6a33c, #2b2f2d);
+  width: 90vw;
+  margin: 30px;
+  padding: 5px;
+  animation: animated 6.5s linear infinite;
+  justify-content: left;
+  border-radius: 30px;
+}
+body #an-innosent-man:not(:hover) > .main > img {
+  transition: all ease-in-out 0.5s;
+  filter: grayscale(100%);
+  width: 150px;
+  height: 150px;
+  margin: 0px;
+}
+body #an-innosent-man:hover > .main > img {
+  transition: all ease-in-out 0.8s;
+  transition-delay: 0.3s;
+  color: #d6a33c;
+}
+body #an-innosent-man:not(:hover) > .main > p {
+  transition: all ease-in-out 0.5s;
+  display: none;
+}
+body #an-innosent-man:hover > p {
+  transition: all ease-in-out 0.8s;
+  transition-delay: 0.5s;
+}
+body #an-innosent-man:not(:hover) > .main > h1 {
+  transition: all ease-in-out 0.8s;
+  color: #adadad;
+}
+body #an-innosent-man:hover > .main > h1 {
+  transition: all ease-in-out 0.5s;
+  transition-delay: 0.5s;
+  display: none;
+}
+body #an-innosent-man:not(:hover) > .main > button {
+  transition: all ease-in-out 0.5s;
+  display: none;
+}
+body #an-innosent-man:hover > .main > button {
+  transition: all ease-in-out 0.8s;
+  transition-delay: 0.5s;
+}
+body #an-innosent-man:not(:hover) > .main {
+  transition: all ease-in-out 0.5s;
+  background: transparent;
+}
+body #an-innosent-man:hover > .main {
+  transition: all ease-in-out 0.8s;
+}
+body #an-innosent-man:not(:hover) {
+  transition: all ease-in-out 0.5s;
+  background: transparent;
+  border: none;
+}
+body #an-innosent-man:hover {
+  transition: all ease-in-out 0.8s;
+}
+@keyframes animated {
+  to {
+    background-position-x: 90vw;
+  }
+}
+body #an-innosent-man .main {
+  position: relative;
+  padding: 5px;
+  border-radius: 25px;
+  margin: 5px;
+  display: block;
+  background-color: #00001a;
+  display: flex;
+  flex-wrap: nowrap;
+}
+body #an-innosent-man .main img {
+  width: 350px;
+  height: 350px;
+  border-radius: 10px;
+  margin: 10px;
+}
+body #an-innosent-man .main h1 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #d6a33c;
+  font-weight: bold;
+  font-size: xx-large;
+  margin: 0px 12px;
+}
+body #an-innosent-man .main p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #ffffff;
+  font-size: medium;
+  text-align: left;
+  -moz-columns: 150px 2;
+       columns: 150px 2;
+  -moz-column-gap: 25px;
+       column-gap: 25px;
+  max-width: 500px;
+  padding: 10px 0px;
+}
+body #an-innosent-man .main p .title {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #d6a33c;
+  font-size: larger;
+  font-weight: bold;
+}
+body #an-innosent-man .main p .song {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #dfb766;
+  font-size: medium;
+  border: none;
+}
+body #an-innosent-man .main button {
+  background-color: #d6a33c;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: large;
+  font-weight: bold;
+  color: #ffffff;
+  padding: 10px;
+  border-width: 3px;
+  border-color: #d6a33c;
+  border-radius: 10px;
+  position: absolute;
+  margin: 10px;
+  right: 0;
+  bottom: 0;
+}
+body #an-innosent-man .main button:hover {
+  background-color: transparent;
+}
+body #the-bridge {
+  /*colours, 1: main, 2: dark, 3: light*/
+  /*#region hover*/
+  /*#endregion*/
+  background: linear-gradient(to right, #244970, #00578e, #a7b5c6, #00578e, #244970);
+  width: 90vw;
+  margin: 30px;
+  padding: 5px;
+  animation: animated 6.5s linear infinite;
+  justify-content: left;
+  border-radius: 30px;
+}
+body #the-bridge:not(:hover) > .main > img {
+  transition: all ease-in-out 0.5s;
+  filter: grayscale(100%);
+  width: 150px;
+  height: 150px;
+  margin: 0px;
+}
+body #the-bridge:hover > .main > img {
+  transition: all ease-in-out 0.8s;
+  transition-delay: 0.3s;
+  color: #00578e;
+}
+body #the-bridge:not(:hover) > .main > p {
+  transition: all ease-in-out 0.5s;
+  display: none;
+}
+body #the-bridge:hover > p {
+  transition: all ease-in-out 0.8s;
+  transition-delay: 0.5s;
+}
+body #the-bridge:not(:hover) > .main > h1 {
+  transition: all ease-in-out 0.8s;
+  color: #adadad;
+}
+body #the-bridge:hover > .main > h1 {
+  transition: all ease-in-out 0.5s;
+  transition-delay: 0.5s;
+  display: none;
+}
+body #the-bridge:not(:hover) > .main > button {
+  transition: all ease-in-out 0.5s;
+  display: none;
+}
+body #the-bridge:hover > .main > button {
+  transition: all ease-in-out 0.8s;
+  transition-delay: 0.5s;
+}
+body #the-bridge:not(:hover) > .main {
+  transition: all ease-in-out 0.5s;
+  background: transparent;
+}
+body #the-bridge:hover > .main {
+  transition: all ease-in-out 0.8s;
+}
+body #the-bridge:not(:hover) {
+  transition: all ease-in-out 0.5s;
+  background: transparent;
+  border: none;
+}
+body #the-bridge:hover {
+  transition: all ease-in-out 0.8s;
+}
+@keyframes animated {
+  to {
+    background-position-x: 90vw;
+  }
+}
+body #the-bridge .main {
+  position: relative;
+  padding: 5px;
+  border-radius: 25px;
+  margin: 5px;
+  display: block;
+  background-color: #00001a;
+  display: flex;
+  flex-wrap: nowrap;
+}
+body #the-bridge .main img {
+  width: 350px;
+  height: 350px;
+  border-radius: 10px;
+  margin: 10px;
+}
+body #the-bridge .main h1 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #00578e;
+  font-weight: bold;
+  font-size: xx-large;
+  margin: 0px 12px;
+}
+body #the-bridge .main p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #ffffff;
+  font-size: medium;
+  text-align: left;
+  -moz-columns: 150px 2;
+       columns: 150px 2;
+  -moz-column-gap: 25px;
+       column-gap: 25px;
+  max-width: 500px;
+  padding: 10px 0px;
+}
+body #the-bridge .main p .title {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #00578e;
+  font-size: larger;
+  font-weight: bold;
+}
+body #the-bridge .main p .song {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #0076c1;
+  font-size: medium;
+  border: none;
+}
+body #the-bridge .main button {
+  background-color: #00578e;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: large;
+  font-weight: bold;
+  color: #ffffff;
+  padding: 10px;
+  border-width: 3px;
+  border-color: #00578e;
+  border-radius: 10px;
+  position: absolute;
+  margin: 10px;
+  right: 0;
+  bottom: 0;
+}
+body #the-bridge .main button:hover {
+  background-color: transparent;
+}
+body #storm-front {
+  /*colours, 1: main, 2: dark, 3: light*/
+  /*#region hover*/
+  /*#endregion*/
+  background: linear-gradient(to right, #22101e, #c80000, #070409, #c80000, #22101e);
+  width: 90vw;
+  margin: 30px;
+  padding: 5px;
+  animation: animated 6.5s linear infinite;
+  justify-content: left;
+  border-radius: 30px;
+}
+body #storm-front:not(:hover) > .main > img {
+  transition: all ease-in-out 0.5s;
+  filter: grayscale(100%);
+  width: 150px;
+  height: 150px;
+  margin: 0px;
+}
+body #storm-front:hover > .main > img {
+  transition: all ease-in-out 0.8s;
+  transition-delay: 0.3s;
+  color: #c80000;
+}
+body #storm-front:not(:hover) > .main > p {
+  transition: all ease-in-out 0.5s;
+  display: none;
+}
+body #storm-front:hover > p {
+  transition: all ease-in-out 0.8s;
+  transition-delay: 0.5s;
+}
+body #storm-front:not(:hover) > .main > h1 {
+  transition: all ease-in-out 0.8s;
+  color: #adadad;
+}
+body #storm-front:hover > .main > h1 {
+  transition: all ease-in-out 0.5s;
+  transition-delay: 0.5s;
+  display: none;
+}
+body #storm-front:not(:hover) > .main > button {
+  transition: all ease-in-out 0.5s;
+  display: none;
+}
+body #storm-front:hover > .main > button {
+  transition: all ease-in-out 0.8s;
+  transition-delay: 0.5s;
+}
+body #storm-front:not(:hover) > .main {
+  transition: all ease-in-out 0.5s;
+  background: transparent;
+}
+body #storm-front:hover > .main {
+  transition: all ease-in-out 0.8s;
+}
+body #storm-front:not(:hover) {
+  transition: all ease-in-out 0.5s;
+  background: transparent;
+  border: none;
+}
+body #storm-front:hover {
+  transition: all ease-in-out 0.8s;
+}
+@keyframes animated {
+  to {
+    background-position-x: 90vw;
+  }
+}
+body #storm-front .main {
+  position: relative;
+  padding: 5px;
+  border-radius: 25px;
+  margin: 5px;
+  display: block;
+  background-color: #00001a;
+  display: flex;
+  flex-wrap: nowrap;
+}
+body #storm-front .main img {
+  width: 350px;
+  height: 350px;
+  border-radius: 10px;
+  margin: 10px;
+}
+body #storm-front .main h1 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #c80000;
+  font-weight: bold;
+  font-size: xx-large;
+  margin: 0px 12px;
+}
+body #storm-front .main p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #ffffff;
+  font-size: medium;
+  text-align: left;
+  -moz-columns: 150px 2;
+       columns: 150px 2;
+  -moz-column-gap: 25px;
+       column-gap: 25px;
+  max-width: 500px;
+  padding: 10px 0px;
+}
+body #storm-front .main p .title {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #c80000;
+  font-size: larger;
+  font-weight: bold;
+}
+body #storm-front .main p .song {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #fb0000;
+  font-size: medium;
+  border: none;
+}
+body #storm-front .main button {
+  background-color: #c80000;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: large;
+  font-weight: bold;
+  color: #ffffff;
+  padding: 10px;
+  border-width: 3px;
+  border-color: #c80000;
+  border-radius: 10px;
+  position: absolute;
+  margin: 10px;
+  right: 0;
+  bottom: 0;
+}
+body #storm-front .main button:hover {
+  background-color: transparent;
+}
+body #river-of-dreams {
+  /*colours, 1: main, 2: dark, 3: light*/
+  /*#region hover*/
+  /*#endregion*/
+  background: linear-gradient(to right, #006e4c, #5ea5ba, #822a30, #5ea5ba, #006e4c);
+  width: 90vw;
+  margin: 30px;
+  padding: 5px;
+  animation: animated 6.5s linear infinite;
+  justify-content: left;
+  border-radius: 30px;
+}
+body #river-of-dreams:not(:hover) > .main > img {
+  transition: all ease-in-out 0.5s;
+  filter: grayscale(100%);
+  width: 150px;
+  height: 150px;
+  margin: 0px;
+}
+body #river-of-dreams:hover > .main > img {
+  transition: all ease-in-out 0.8s;
+  transition-delay: 0.3s;
+  color: #5ea5ba;
+}
+body #river-of-dreams:not(:hover) > .main > p {
+  transition: all ease-in-out 0.5s;
+  display: none;
+}
+body #river-of-dreams:hover > p {
+  transition: all ease-in-out 0.8s;
+  transition-delay: 0.5s;
+}
+body #river-of-dreams:not(:hover) > .main > h1 {
+  transition: all ease-in-out 0.8s;
+  color: #adadad;
+}
+body #river-of-dreams:hover > .main > h1 {
+  transition: all ease-in-out 0.5s;
+  transition-delay: 0.5s;
+  display: none;
+}
+body #river-of-dreams:not(:hover) > .main > button {
+  transition: all ease-in-out 0.5s;
+  display: none;
+}
+body #river-of-dreams:hover > .main > button {
+  transition: all ease-in-out 0.8s;
+  transition-delay: 0.5s;
+}
+body #river-of-dreams:not(:hover) > .main {
+  transition: all ease-in-out 0.5s;
+  background: transparent;
+}
+body #river-of-dreams:hover > .main {
+  transition: all ease-in-out 0.8s;
+}
+body #river-of-dreams:not(:hover) {
+  transition: all ease-in-out 0.5s;
+  background: transparent;
+  border: none;
+}
+body #river-of-dreams:hover {
+  transition: all ease-in-out 0.8s;
+}
+@keyframes animated {
+  to {
+    background-position-x: 90vw;
+  }
+}
+body #river-of-dreams .main {
+  position: relative;
+  padding: 5px;
+  border-radius: 25px;
+  margin: 5px;
+  display: block;
+  background-color: #00001a;
+  display: flex;
+  flex-wrap: nowrap;
+}
+body #river-of-dreams .main img {
+  width: 350px;
+  height: 350px;
+  border-radius: 10px;
+  margin: 10px;
+}
+body #river-of-dreams .main h1 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #5ea5ba;
+  font-weight: bold;
+  font-size: xx-large;
+  margin: 0px 12px;
+}
+body #river-of-dreams .main p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #ffffff;
+  font-size: medium;
+  text-align: left;
+  -moz-columns: 150px 2;
+       columns: 150px 2;
+  -moz-column-gap: 25px;
+       column-gap: 25px;
+  max-width: 500px;
+  padding: 10px 0px;
+}
+body #river-of-dreams .main p .title {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #5ea5ba;
+  font-size: larger;
+  font-weight: bold;
+}
+body #river-of-dreams .main p .song {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #82b9c9;
+  font-size: medium;
+  border: none;
+}
+body #river-of-dreams .main button {
+  background-color: #5ea5ba;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: large;
+  font-weight: bold;
+  color: #ffffff;
+  padding: 10px;
+  border-width: 3px;
+  border-color: #5ea5ba;
+  border-radius: 10px;
+  position: absolute;
+  margin: 10px;
+  right: 0;
+  bottom: 0;
+}
+body #river-of-dreams .main button:hover {
+  background-color: transparent;
+}/*# sourceMappingURL=styles.css.map */
